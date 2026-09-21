@@ -40,7 +40,7 @@ def timer(threshold):
     return decorator
 
 # 等價於 sleep_04 = timer(0.2)(sleep_04)
-@timer(0.2)
+@timer(0.2) # timer 返回一個裝飾器，這個裝飾器會檢查函數的執行時間是否超過 0.2 秒
 def sleep_04():
     time.sleep(0.4)
 
